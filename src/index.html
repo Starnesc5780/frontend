@@ -8,8 +8,12 @@
 </head>
 <body>
     <header role="banner">
-        <h1>ECE 461 - Team 26: Project Phase 2</h1>
-    </header>
+        <h1>
+            <button id="banner-main" aria-label="Back to Main" class="header-button">
+                ECE 461 - Team 26: Project Phase 2
+            </button>
+        </h1>
+      </header>
 
     <!-- Search Section -->
     <section class="search-section" aria-label="Search functionality">
@@ -42,7 +46,7 @@
             <form id="uploadForm">
                 <label for="url">Package URL:</label>
                 <input type="url" id="url" placeholder="Enter package URL">
-                <label for="file">Or upload a file:</label>
+                <label for="file">Or upload a zip file:</label>
                 <input type="file" id="file">
                 <button type="submit">Submit</button>
             </form>
@@ -85,6 +89,12 @@
                 <button type="submit">Get Packages</button>
             </form>
         </div>
+
+        <!-- Content Section -->
+        <!-- <section class="content-section">
+            <h2>Featured Content</h2>
+            <p>This is where your content will be displayed!</p>
+        </section> -->
     </main>
 
     <footer role="contentinfo">

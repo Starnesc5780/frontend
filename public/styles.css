@@ -1,3 +1,108 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8ecef;
+    color: #333;
+}
+
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #1800a3;
+    color: #fff;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.header-button {
+    /* Remove default button appearance */
+    all: unset;
+    cursor: pointer; /* Show pointer cursor to indicate interactivity */
+    font-size: inherit; /* Inherit the font size of the <h1> */
+    font-family: inherit; /* Inherit the font family of the <h1> */
+    font-weight: inherit; /* Keep bold weight if <h1> has it */
+    color: inherit; /* Match the text color of <h1> */
+}
+
+.header-button:focus {
+    outline: 2px solid #007bff; /* Optional: visible focus indicator for accessibility */
+    outline-offset: 2px; /* Create space between text and focus outline */
+}
+
+
+/* Search Section */
+.search-section {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 0.5em 1em;
+    margin-left: 0.5em;
+    background-color: #2703fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #0288d1;
+}
+
+
+/* Button Section */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.button-section button {
+    padding: 0.7em 1.5em;
+    background-color: #2703fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-section button:hover {
+    background-color: #0288d1;
+}
+
+
 .hidden-section {
     display: none;
     margin: 20px auto;
@@ -40,4 +145,73 @@
 
 .hidden-section button:hover {
     background-color: #0288d1;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="url"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Styling for all submit buttons */
+[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for all submit buttons */
+[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+
+/* Content Section */
+.content-section {
+    max-width: 800px;
+    padding: 1.5em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 1em;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
 }
