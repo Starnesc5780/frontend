@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE 461 - Team 26: Project Phase 2</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>ECE 461 - Team 26: Project Phase 2</h1>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section" aria-label="Search functionality">
+        <form id="searchForm">
+            <label for="search-bar">Search for a package:</label>
+            <input type="text" id="search-bar" name="query" placeholder="Search here..." required>
+            <button type="submit" aria-label="Submit search">Search</button>
+        </form>
+    </section>
+
+    <!-- Button Section -->
+    <section class="button-section" role="navigation" aria-label="Primary actions">
+        <button id="uploadBtn" aria-label="Upload a new package">Upload Package</button>
+        <button id="updateBtn" aria-label="Update an existing package">Update Package</button>
+        <button id="rateBtn" aria-label="Rate a package">Rate Package</button>
+        <button id="costBtn" aria-label="View package costs">Package Cost</button>
+        <button id="getBtn" aria-label="View available packages">Get Packages</button>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div id="content">
+            <h2>Featured Content</h2>
+            <p>This is where your content will be displayed!</p>
+        </div>
+
+        <!-- Hidden Sections -->
+        <div class="hidden-section" id="uploadPack" style="display: none;">
+            <h2>Upload Package</h2>
+            <form id="uploadForm">
+                <label for="url">Package URL:</label>
+                <input type="url" id="url" placeholder="Enter package URL">
+                <label for="file">Or upload a file:</label>
+                <input type="file" id="file">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="hidden-section" id="updatePack" style="display: none;">
+            <h2>Update Package</h2>
+            <form id="updateForm">
+                <label for="updateID">Package ID:</label>
+                <input type="text" id="updateID" placeholder="Enter package ID">
+                <button type="submit">Update</button>
+            </form>
+        </div>
+
+        <div class="hidden-section" id="ratePack" style="display: none;">
+            <h2>Rate Package</h2>
+            <form id="rateForm">
+                <label for="rateID">Package ID:</label>
+                <input type="text" id="rateID" placeholder="Enter package ID">
+                <button type="submit">Rate</button>
+            </form>
+        </div>
+
+        <div class="hidden-section" id="costPack" style="display: none;">
+            <h2>Package Cost</h2>
+            <form id="costForm">
+                <label for="costID">Package ID:</label>
+                <input type="text" id="costID" placeholder="Enter package ID">
+                <button type="submit">Get Cost</button>
+            </form>
+        </div>
+
+        <div class="hidden-section" id="getPack" style="display: none;">
+            <h2>Get Packages</h2>
+            <form id="getForm">
+                <label for="packageName">Package Name:</label>
+                <input type="text" id="packageName" placeholder="Enter package name">
+                <label for="version">Version:</label>
+                <input type="text" id="version" placeholder="Enter version">
+                <button type="submit">Get Packages</button>
+            </form>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="../dist/main.js" type="module"></script>
+</body>
+</html>

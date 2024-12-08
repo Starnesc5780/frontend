@@ -1,0 +1,8 @@
+# Ignore JavaScript files in the dist directory
+/src/*.js
+
+# If compiled JavaScript is generated in the same directory as the TypeScript files
+*.js
+
+# Optionally ignore map files if generated
+*.js.map

@@ -1,0 +1,43 @@
+.hidden-section {
+    display: none;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hidden-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.hidden-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.hidden-section button {
+    padding: 10px 20px;
+    background-color: #2703fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden-section button:hover {
+    background-color: #0288d1;
+}
