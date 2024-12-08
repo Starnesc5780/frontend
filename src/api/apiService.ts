@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const apiURL = 'http://ec2-3-144-8-160.us-east-2.compute.amazonaws.com:3000';
+// const apiURL = 'http://ec2-3-144-8-160.us-east-2.compute.amazonaws.com:3000';
+const apiURL = 'http://localhost:3000';
 
 export const fetchPackages = async (offset: number) => {
     try {
